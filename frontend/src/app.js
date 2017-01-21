@@ -1,8 +1,9 @@
 // import {withRouter, Router, Route, Link, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 import React from 'react';
-import $ from 'jquery'
-
+import Mainpage from './mainpage/mainpage';
+import Userform from './mainpage/userform';
+import $ from 'jquery';
 
 const App = React.createClass({
 	getInitialState(){
@@ -19,9 +20,13 @@ const App = React.createClass({
 	},
 	render(){
 		return(
-			<div>
-				{this.state.information ? console.log(this.state.information) : <p>blah</p>}
-			</div>
+			
+      <div>
+      <Mainpage />
+        <div style = {{height: 50}}>
+        </div>
+      <Userform />
+      </div>
 		)
 	}
 })

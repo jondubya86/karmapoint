@@ -6,7 +6,7 @@ import IndividualComplete from 'IndividualComplete';
 const CompleteVolunteersDiv = React.createClass({
   render: function() {
     return (
-        <IndividualComplete />
+      <IndividualComplete />
     )
   }
 })

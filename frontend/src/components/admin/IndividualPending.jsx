@@ -3,9 +3,9 @@ import React from 'react';
 const IndividualPending = React.createClass({
   render: function() {
     return (
-        <div>
-          This is the Individual Pending component
-        </div>
+      <div>
+        This is the Individual Pending component
+      </div>
     )
   }
 })

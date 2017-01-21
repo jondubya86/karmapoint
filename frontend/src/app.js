@@ -12,6 +12,6 @@ const App = React.createClass({
 })
 
 ReactDOM.render(
-	<App />, 
+	<App />,
   document.getElementById('root')
 )

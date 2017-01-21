@@ -1,25 +1,40 @@
 const router = require("express").Router();
 const User = require('../models').User;
-const Comment = require('../models').Comment;
+const Company = require('../models').Company;
 
-const getAllCompanies = (req,res) => {
-  Company.findAll({}
-  ).then((companies) =>{
-    res.send(companies)}
+const getAllComments = (req,res) => {
+  Comment.findAll({}
+  ).then((comments) =>{
+    res.send(comments)}
   )
 };
 
-// const postNewCompany = (req,res)=>{
-//   Company.create({
-//     name: req.body.name,
-//     }).then((restaurant) =>{
-//     console.log('Restaurant created!')
-//     res.send(restaurant)
-//   })
-// };
+const postNewComment = (req,res)=>{
+  Comment.create({
+    comments: req.body.comments,
+    date: req.body.date,
+    task: req.body.task,
+    hours: req.body.hours,
+    }).then((comment) =>{
+    console.log('comment created!')
+    res.send(comment)
+  })
+};
+
+const getSingleComment = (req,res) => {
+	Comment.findById(req.params.id,
+		{include: [Company]}
+	).then((comment)=>{
+		res.send(comment)
+	})
+};
+
 
 router.route('/')
-  .get(getAllCompanies)
-  // .post(postNewCompany)
+  .get(getAllComments)
+  .post(postNewComment)
+
+router.route('/:id')
+	.getSingleComment
 
 module.exports = router

@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "jondubya",
+    "username": "Jung",
     "password": null,
     "database": "karmapoint",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "jondubya",
+    "username": "Jung",
     "password": null,
     "database": "karmapoint",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "jondubya",
+    "username": "Jung",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",

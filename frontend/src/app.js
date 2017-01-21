@@ -1,12 +1,27 @@
 // import {withRouter, Router, Route, Link, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 import React from 'react';
+import $ from 'jquery'
 
 
 const App = React.createClass({
+	getInitialState(){
+		return({
+			information: ''
+		})
+	},
+	componentDidMount(){
+		$.ajax({
+			url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/10001/programs?api_key=75ea03a922dc66db2560a23cc4eed49e&serviceTag=food+pantry&limit=20',
+			type: 'GET'
+		})
+		.done((info)=>this.setState({information: info}))
+	},
 	render(){
 		return(
-			<div>Hello from app.js</div>
+			<div>
+				{this.state.information ? console.log(this.state.information) : <p>blah</p>}
+			</div>
 		)
 	}
 })

@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const User = require('../models').User;
+const Company = require('../models').Company;
 const Comment = require('../models').Comment;
+
 
 const getAllCompanies = (req,res) => {
   Company.findAll({}
@@ -9,17 +11,20 @@ const getAllCompanies = (req,res) => {
   )
 };
 
-// const postNewCompany = (req,res)=>{
-//   Company.create({
-//     name: req.body.name,
-//     }).then((restaurant) =>{
-//     console.log('Restaurant created!')
-//     res.send(restaurant)
-//   })
-// };
+const postNewCompany = (req,res)=>{
+  Company.create({
+    name: req.body.name,
+    address: req.body.address,
+    longitude: req.body.longitude,
+    latitude: req.body.latitude
+    }).then((company) =>{
+    console.log('Company created!')
+    res.send(company)
+  })
+};
 
 router.route('/')
   .get(getAllCompanies)
-  // .post(postNewCompany)
+  .post(postNewCompany)
 
 module.exports = router

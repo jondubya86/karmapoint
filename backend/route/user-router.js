@@ -20,9 +20,9 @@ const postNewUser = (req,res)=>{
 };
 
 const getSingleUser = (req,res) => {
-	Restaurant.findById(req.params.id,
+	User.findById(req.params.id,
 		{include: [Comment],
-			{include: [Comment]}}
+			{include: [Company]}}
 	).then((review)=>{
 		res.send(review)
 	})

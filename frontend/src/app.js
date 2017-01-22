@@ -3,17 +3,21 @@ import React from 'react';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
 // Components
-import Mainpage from './mainpage/mainpage'
-import ProgramInfo from './message/programinfo'
+import Mainpage from './mainpage/mainpage';
+import ProgramInfo from './message/programinfo';
+import Userform from './mainpage/userform';
+import UserAccountPage from './components/userAccount/UserAccountPage';
+import Footer from './components/Footer';
 
-//moved Mainpage and Userform off App-parent component to index route.
-//userform imported into mainpage component
+// css
+import '../public/css/main.css';
 
 const App = React.createClass({
 	render(){
 		return(
-      <div>
+      <div className="mainPage">
 			{this.props.children}
+			<Footer />
       </div>
 		)
 	}
@@ -26,6 +30,7 @@ ReactDOM.render(
 			{/*<Route path="/result" component={App} />*/}
 			{/*change path of companyinfo to :programId */}
 			<Route path='/program/:programId' component={ProgramInfo} />
+			<Route path="/account" component={UserAccountPage} />
 		</Route>
 	</Router>,
   document.getElementById('root')

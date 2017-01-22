@@ -1,14 +1,16 @@
 import React from 'react';
 
 // components
-import IndividualPending from 'IndividualPending';
+import IndividualPending from './IndividualPending';
 
 const PendingDiv = React.createClass({
   render: function() {
     return (
-      <IndividualPending />
+      <div>
+        <IndividualPending />
+      </div>
     )
   }
 })
 
-export default PendingDiv
+export default PendingDiv;

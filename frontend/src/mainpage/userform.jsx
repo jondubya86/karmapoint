@@ -40,8 +40,6 @@ const Userform = React.createClass({
     return(
 
         <div className="userForm">
-
-
           <div>
             <form>
               <div className="insideForm">
@@ -77,8 +75,31 @@ const Userform = React.createClass({
                     <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
                   </div>
                 </div>
-               <Link to = '/result' ><input placeholder = ""type = "submit" /> </Link>
+                </div>
+                <p className="interests">Interest(s)</p>
+                <div className="checkBoxes">
+                  <div>
+                    <label htmlFor="Education">Education</label>
+                    <input onClick = {this.handleClick.bind(this,"education")} type="checkbox" value="Education"/>
+                  </div>
+                  <div>
+                    <label htmlFor="Health">Health</label>
+                    <input onClick = {this.handleClick.bind(this,"health")} type="checkbox" value="Health"/>
+                  </div>
 
+                  <div>
+                    <label htmlFor="Transit">Transit</label>
+                    <input onClick = {this.handleClick.bind(this,"transit")} type="checkbox" value="Transit"/>
+                  </div>
+                  {/* <div>
+                    <input onClick = {this.handleClick.bind(this,"housing")} type="checkbox" name="vehicle" value="  Housing"/> Housing
+                  </div> */}
+                  <div>
+                    <label htmlFor="Food">Food</label>
+                    <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
+                  </div>
+                </div>
+               <Link to = '/result' ><input placeholder = ""type = "submit" /> </Link>
                 <input className="formButton" type="submit" />
               </div>
             </form>

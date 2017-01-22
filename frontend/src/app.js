@@ -1,3 +1,4 @@
+// import {withRouter, Router, Route, Link, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
@@ -25,7 +26,7 @@ const App = React.createClass({
       </div>
 		)
 	}
-})
+});
 
 ReactDOM.render(
 	<Router history={browserHistory}>
@@ -42,7 +43,6 @@ ReactDOM.render(
 			<Route path='/program/:programId' component={ProgramInfo} />
 
 			<Route path="/account" component={UserAccountPage} />
-
 		</Route>
 			<Route path="/result" component={MainResult} /> 
 	</Router>,

@@ -1,6 +1,11 @@
 # karmapoint
 
-This project's mission is to allow users to register and sign up to allow for there to be a tracking system as volunteers. During a time where it's imperative for all to have a skillset before becoming employable it is very important to gather as many skills as possible 
+##Objective
+This project's mission is to revolutionize the volunteer system. It will make it easier for both organizers and potential volunteers who do not know of any local places that needs help using Aunt Bertha and Google Maps API. 
+
+It will allow users to register and sign up to allow for there to be a tracking system as volunteers. It will be a point system where hours logged equals karma points accumulated over time, organizers can also leave comments along with skillsets demonstrated during the time there. Users cannot give other users points rather only verified companies and organizers can do so.
+
+Upon sign-up it will log your future accumulated points/stars that potential employers/college boards can see. Companies that sign up must be verified before being licensed a company/organizer account.
 
 ## Database Setup
 Install postgres app AND postico app then run both, then create a database called "karmapoint" within postico.

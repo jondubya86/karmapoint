@@ -6,7 +6,11 @@ import IndividualComplete from './IndividualComplete';
 const CompleteVolunteersDiv = React.createClass({
   render: function() {
     return (
-      <IndividualComplete />
+      <div className="completeCont">
+        <IndividualComplete />
+        <IndividualComplete />
+        <IndividualComplete />
+      </div>
     )
   }
 })

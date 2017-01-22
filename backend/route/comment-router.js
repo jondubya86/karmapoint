@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const User = require('../models').User;
 const Company = require('../models').Company;
+const Comment = require('../models').Comment;
 
 const getAllComments = (req,res) => {
   Comment.findAll({}
@@ -10,12 +11,7 @@ const getAllComments = (req,res) => {
 };
 
 const postNewComment = (req,res)=>{
-  Comment.create({
-    comments: req.body.comments,
-    date: req.body.date,
-    task: req.body.task,
-    hours: req.body.hours,
-    }).then((comment) =>{
+  Comment.create(req.body).then((comment) =>{
     console.log('comment created!')
     res.send(comment)
   })

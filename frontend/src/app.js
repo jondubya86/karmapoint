@@ -4,7 +4,11 @@ import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
 // import ResultItem from './results/res7'
 // Components
 import Mainpage from './mainpage/mainpage';
+
 import MainResult from './results/resultItem';
+
+import ProgramInfo from './message/programinfo';
+
 import Userform from './mainpage/userform';
 import UserAccountPage from './components/userAccount/UserAccountPage';
 import Footer from './components/Footer';
@@ -28,9 +32,15 @@ ReactDOM.render(
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>
 
+
 			
 
 			{/* <Route path="/result" component={ResultPage} /> */}
+
+			{/*<Route path="/result" component={App} />*/}
+			{/*change path of companyinfo to :programId */}
+			<Route path='/program/:programId' component={ProgramInfo} />
+
 			<Route path="/account" component={UserAccountPage} />
 
 		</Route>

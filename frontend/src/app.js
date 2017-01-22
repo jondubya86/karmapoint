@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 // css
 import '../public/css/main.css';
+import '../public/css/programinfo.css'
 
 const App = React.createClass({
 	render(){

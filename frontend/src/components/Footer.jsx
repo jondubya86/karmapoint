@@ -6,6 +6,7 @@ const Footer = React.createClass({
     return (
       <footer>
         <small>© KarmaPoint 2017</small>
+        {/* <p>Have an account?<a href="#">Sign in</a></p> */}
       </footer>
     )
   }

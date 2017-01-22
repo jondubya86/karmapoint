@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualComplete = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="individualComplete">
         This is the Individual Complete component
       </div>
     )

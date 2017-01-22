@@ -3,18 +3,24 @@ import React from 'react';
 // components
 import PendingDiv from './PendingDiv';
 import CompleteVolunteersDiv from './CompleteVolunteersDiv';
+import Navbar from '../Navbar';
 
 
-const AdminPage = React.createClass({
+const UserAccountPage = React.createClass({
   render: function(){
     return (
       <div>
-        <PendingDiv />
-        <CompleteVolunteersDiv />
+        <Navbar />
+        <div className="userAccountCont">
+          <h1>Pending Volunteer positions</h1>
+          <PendingDiv />
+          <h1>Completed tasks</h1>
+          <CompleteVolunteersDiv />
+        </div>
       </div>
     )
   }
 })
 
 
-export default AdminPage;
+export default UserAccountPage;

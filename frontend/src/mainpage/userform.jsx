@@ -44,9 +44,9 @@ const Userform = React.createClass({
               <div className="insideForm">
                 <div className="inputDiv">
                   <h1 className="inputDivH1">Find a volunteer location</h1>
-                  <div>
+                  {/* <div>
                     <input onChange = {this.handleChange.bind(this, "name")} placeholder="name" type='text' />
-                  </div>
+                  </div> */}
                   <div>
                     <input onChange = {this.handleChange.bind(this, "zip")} placeholder="zipcode" type='text' />
                   </div>

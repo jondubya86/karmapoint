@@ -1,4 +1,3 @@
-{
  "count": "157",
  "postal_location": {
   "latitude": 40.7508,

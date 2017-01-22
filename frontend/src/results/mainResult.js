@@ -5,12 +5,8 @@ import React from 'react';
 const Mainresult = React.createClass({
   render(){
     return(
-      
         <div style = {{display: "flex",justifyContent: "center"}}>
-
-          
         </div>
-
     )
   }
 })

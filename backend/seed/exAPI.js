@@ -1,4 +1,4 @@
-{
+let APIcall = {
  "count": "157",
  "postal_location": {
   "latitude": 40.7508,
@@ -2622,3 +2622,5 @@
  "kind": "search#resourcesItem",
  "etag": "\"bLMx0u7LoU_Cwr0jjkkTdfz1Aus/UD-lfHes1ItNGu8XcbXGVZG6JKI\""
 }
+
+module.exports = APIcall

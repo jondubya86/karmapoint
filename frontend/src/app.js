@@ -4,6 +4,7 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
 // Components
 import Mainpage from './mainpage/mainpage';
+import ProgramInfo from './message/programinfo';
 import Userform from './mainpage/userform';
 import UserAccountPage from './components/userAccount/UserAccountPage';
 import Footer from './components/Footer';
@@ -26,7 +27,9 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>
-			{/* <Route path="/result" component={ResultPage} /> */}
+			{/*<Route path="/result" component={App} />*/}
+			{/*change path of companyinfo to :programId */}
+			<Route path='/program/:programId' component={ProgramInfo} />
 			<Route path="/account" component={UserAccountPage} />
 		</Route>
 	</Router>,

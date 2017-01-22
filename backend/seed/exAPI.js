@@ -1,5 +1,5 @@
- let APIcall = {
-  "count": "157",
+let APIcall = {
+ "count": "157",
  "postal_location": {
   "latitude": 40.7508,
   "longitude": -73.996122

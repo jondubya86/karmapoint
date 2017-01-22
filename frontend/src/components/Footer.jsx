@@ -1,11 +1,11 @@
-import React from 'React';
+import React from 'react';
 
 
 const Footer = React.createClass({
   render: function() {
     return (
       <footer>
-        <small>KarmaPoint</small>
+        <small>© KarmaPoint 2017</small>
       </footer>
     )
   }

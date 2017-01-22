@@ -6,7 +6,7 @@ import IndividualPending from './IndividualPending';
 const PendingDiv = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="pendingCont">
         <IndividualPending />
       </div>
     )

@@ -6,7 +6,7 @@ import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
 import Mainpage from './mainpage/mainpage';
 import MainResult from './results/resultItem';
 import Userform from './mainpage/userform';
-import AdminPage from './components/admin/AdminPage';
+import UserAccountPage from './components/userAccount/UserAccountPage';
 import Footer from './components/Footer';
 
 // css
@@ -27,7 +27,12 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>
-			<Route path="/company" component={AdminPage} />
+
+			
+
+			{/* <Route path="/result" component={ResultPage} /> */}
+			<Route path="/account" component={UserAccountPage} />
+
 		</Route>
 			<Route path="/result" component={MainResult} /> 
 	</Router>,

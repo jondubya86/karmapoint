@@ -1,35 +1,36 @@
 import React, {Component} from 'react'
-import { GoogleMapLoader, GoogleMap, Marker } from 'react-google-maps'
+import Map from './map';
+import APIcall from '../../../../backend/seed/exAPI.js'
 
-export default class Container extends Component{
+// css
+// import '../public/css/main.css';
+
+const MapContainer = React.createClass ({
+  getInitialState(){
+    return ({data:APIcall})
+  },
+  componentDidMount(){
+    this.state.data.programs.map((a)=>this.setState({data:a.offices}))
+    console.log(this.state.data.programs.map((a)=>{a.offices}))
+  },
   render() {
-  	const mapContainer = <div style={{height:'100%', width: '100%'}}></div>
+    const location = {
+      lat: 40.7575285,
+      lng:-73.9884469
+    }
+    const markers=[
+      {location: 
+        {lat: 40.7575285,
+        lng:-73.9884469}
+      }
+    ]
+  return(
+    <div style={{width: 600, height: 600, background:'red'}}>
+      <Map center={ location } markers={markers}/>
+    </div>
+    )
 
-  	const markers = this.props.markers.map((venue, i)=>{
-
-  		const marker={
-  			position: {
-  				lat:venue.location.lat,
-  				lng:venue.location.lng
-  			}
-  		}
-  		return <Marker key={i} {...marker} />
-
-  	})
-      return (
-        	<GoogleMapLoader
-  					containerElement ={ mapContainer }
-                 	googleMapElement = {
-                   		<GoogleMap
-  							defaultZoom={15}
-							defaultCenter={this.props.center}
-							options={{streetViewControl: false, mapTypeControl: false}}>
-							{ markers }
-						</GoogleMap>
-					}
-			/>
-           
- 
-      )
   }
-};
+})
+
+export default MapContainer;

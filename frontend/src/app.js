@@ -5,7 +5,7 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 // Components
 import Mainpage from './mainpage/mainpage';
 import Userform from './mainpage/userform';
-import AdminPage from './components/admin/AdminPage';
+import UserAccountPage from './components/userAccount/UserAccountPage';
 import Footer from './components/Footer';
 
 // css
@@ -27,7 +27,7 @@ ReactDOM.render(
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>
 			{/* <Route path="/result" component={ResultPage} /> */}
-			<Route path="/company" component={AdminPage} />
+			<Route path="/account" component={UserAccountPage} />
 		</Route>
 	</Router>,
   document.getElementById('root')

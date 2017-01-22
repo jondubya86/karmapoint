@@ -4,7 +4,7 @@ import React from 'react';
 import PendingDiv from './PendingDiv';
 import CompleteVolunteersDiv from './CompleteVolunteersDiv';
 import Navbar from '../Navbar';
-
+import UpcomingOpps from './UpcomingOpportunities';
 
 const UserAccountPage = React.createClass({
   render: function(){
@@ -12,7 +12,9 @@ const UserAccountPage = React.createClass({
       <div>
         <Navbar />
         <div className="userAccountCont">
-          <h1>Pending Volunteer positions</h1>
+          <h1>Upcoming opportunity</h1>
+          <UpcomingOpps />
+          <h1>Pending requests</h1>
           <PendingDiv />
           <h1>Completed tasks</h1>
           <CompleteVolunteersDiv />

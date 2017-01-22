@@ -10,13 +10,14 @@ nav {
   background-color: #196cfc;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   /*margin: 0;*/
-  width: 275px;
+  width: 250px;
   justify-content: space-between;
 }
 
@@ -38,8 +39,17 @@ nav ul li {
 
 .karmaPoint p {
   color: gold;
-  margin: 0;
+  margin-left: 4px;
 }
+
+.brand {
+  color: white;
+  font-size: 1.7em;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*-------/Navbar--------*/
 
 /*---------Main Page-----------*/
@@ -60,6 +70,19 @@ nav ul li {
 
 .welcome span {
   color: orange;
+}
+
+.messagepage {
+  display: none;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+}
+
+.messagepage textarea{
+  height: 75px;
+  width: 300px;
 }
 
 /*video {
@@ -218,6 +241,15 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.upcomingCont {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .individualPending {
@@ -229,6 +261,38 @@ form {
   height: 150px;
   background-color: #efefef;
 }
+
+.individualOpps {
+  height: 175px;
+  background-color: #efefef;
+  /*margin-bottom: 20px;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+}
+
+.individualOpps button {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.servTitle {
+  width: 200px;
+}
+
+.oppPara {
+  width: 400px;
+}
+
+.services {
+  width: 150px;
+}
+
 /*---------/User Account------*/
 
 

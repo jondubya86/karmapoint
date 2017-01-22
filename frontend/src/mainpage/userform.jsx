@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-
+import {Link} from 'react-router'
 
 const Userform = React.createClass({
   getInitilState(){
@@ -30,14 +30,10 @@ const Userform = React.createClass({
     this.setState({
       [key]: final
     })
-
     console.log(this.state)
   },
-
-
   render(){
     return(
-
         <div className="userForm">
           <div>
             <form>
@@ -74,11 +70,10 @@ const Userform = React.createClass({
                     <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
                   </div>
                 </div>
-                <input className="formButton" type="submit" />
+               <Link to = '/result' ><input className="formButton" type="submit" /></Link>
               </div>
             </form>
           </div>
-
         </div>
 
     )

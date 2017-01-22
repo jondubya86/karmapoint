@@ -2,7 +2,7 @@ var React = require('react');
 import {Link} from 'react-router'
 var APIkey = require('../../../APIkey');
 var singleProgram = require('../../../backend/seed/exAPI.js');
-import $ from 'jquery'
+import $ from 'jquery';
 
 const ProgramInfo = React.createClass({
 	getInitialState(){
@@ -52,14 +52,14 @@ const ProgramInfo = React.createClass({
 						<br/>
 						<button onClick={this.alert}>Send</button>
 						</div>
-						
+
 					</div>
 				)
 			}else{
 				return(
 					<p>loading...</p>
 				)
-			}	
+			}
 	}
 })
 

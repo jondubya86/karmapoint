@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import {Link} from 'react-router'
 
 
 const Userform = React.createClass({
@@ -39,6 +40,8 @@ const Userform = React.createClass({
     return(
 
         <div className="userForm">
+
+
           <div>
             <form>
               <div className="insideForm">
@@ -69,9 +72,11 @@ const Userform = React.createClass({
                     <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" name="vehicle" value=" Food "/> Food
                   </div>
                 </div>
-                <input placeholder = ""type = "submit" />
+               <Link to = '/result' ><input placeholder = ""type = "submit" /> </Link>
               </div>
             </form>
+
+            
           </div>
 
         </div>

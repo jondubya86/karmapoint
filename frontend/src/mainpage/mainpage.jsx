@@ -9,7 +9,7 @@ const Mainpage = React.createClass({
         <div style = {{display: "flex",justifyContent: "center"}}>
 
           <div style = {{width:800, height: 400, backgroundColor: "red", borderColor: "red",borderWidth: 2 }}>
-          here
+            VIDEO HERE
           </div>
         </div>
 

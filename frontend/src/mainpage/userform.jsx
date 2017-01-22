@@ -1,5 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+// import apiKey from '../APIkey'
+import {Router, Route, browserHistory, Link, IndexRoute} from 'react-router';
+// import  from '../results/resultItem'
 
 
 const Userform = React.createClass({
@@ -7,12 +10,12 @@ const Userform = React.createClass({
     return {
       name: '',
       zip: null,
-      interest: '',
-      education: null,
-      health: null,
-      transit: null,
-      housing: null,
-      food: null
+      interest: []
+      // education: null,
+      // health: null,
+      // transit: null,
+      // housing: null,
+      // food: null
     }
   },
 
@@ -24,15 +27,44 @@ const Userform = React.createClass({
     console.log(this.state)
   },
 
-  handleClick(key, event){
-    let final = event.target.value
+  handleInterest( event){
+    let temp = event.target.value
+    // let final = [temp]
     
     this.setState({
-      [key]: final
+      interest:this.state.interest.concat(temp)
     })
 
-    console.log(this.state)
+    // console.log(final)
+    console.log(this.state.interest)
   },
+
+  // submitVolunteer(key,event){
+  //   console.log(this.state)
+  //   event.preventDefault()
+  //   // let data = {
+  //   //   name: this.state.name,
+  //   //   zip: this.state.zip,
+
+  //   // }
+  //   // 75ea03a922dc66db2560a23cc4eed49e&serviceTag=food+pantry&limit=20
+  //   // 5
+  //   $.ajax({
+  //     url:'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/10001/programs?api_key=75ea03a922dc66db2560a23cc4eed49e&serviceTag=food+pantry&limit=20',
+  //     type: 'GET',
+  //   })
+  //   .done(function(data){
+  //     console.log(data)
+  //   })
+
+    
+  //   // this.setState({
+  //   //   : final
+  //   // })
+
+  //   console.log(this.state)
+  //   this.props.router.push('/result')
+  // },
 
 
   render(){
@@ -40,7 +72,7 @@ const Userform = React.createClass({
       
         <div style = {{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <form>
+            <form onSubmit = {this.submitVolunteer}>
               <div>
                 <div>
                   <input onChange = {this.handleChange.bind(this, "name")}placeholder = "name" type = 'text' />
@@ -55,29 +87,29 @@ const Userform = React.createClass({
                 </div>
 
                 <div>
-                  <input onClick = {this.handleClick.bind(this,"education")} type="checkbox" name="vehicle" value=" Education "/>Education
+                  <input onClick = {this.handleInterest} type="checkbox" name="vehicle" value=" Education "/>Education
            
                 </div> 
 
                 <div>
-                  <input onClick = {this.handleClick.bind(this,"health")} type="checkbox" name="vehicle" value=" Health "/> Health
+                  <input onClick = {this.handleInterest} type="checkbox" name="vehicle" value=" Health "/> Health
                 </div>
            
                 <div>
-                  <input onClick = {this.handleClick.bind(this,"transit")} type="checkbox" name="vehicle" value=" Transit "/> Transit
+                  <input onClick = {this.handleInterest} type="checkbox" name="vehicle" value=" Transit "/> Transit
                 </div> 
 
                 <div>
-                  <input onClick = {this.handleClick.bind(this,"housing")} type="checkbox" name="vehicle" value="  Housing"/> Housing
+                  <input onClick = {this.handleInterest} type="checkbox" name="vehicle" value="  Housing"/> Housing
            
                 </div> 
 
                 <div>
-                  <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" name="vehicle" value=" Food "/> Food
+                 <input onClick = {this.handleInterest} type="checkbox" name="vehicle" value=" Food "/> Food 
                 </div>
            
                 
-                <input placeholder = ""type = "submit" />
+                <Link to = '/result'><input placeholder = ""type = "submit" /></Link>
               </div>
             </form>
           </div>

@@ -1,0 +1,75 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mainPage {
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.landingArea {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #196cfc;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+.landingArea h1 {
+  font-size: 5em;
+  color: white;
+}
+
+.landingArea h1 span {
+  font-weight: 300;
+}
+
+.landingArea p {
+  font-size: 2em;
+  color: white;
+}
+
+.userForm {
+  display: flex;
+  justify-content: center;
+  background-color: #196cfc;
+}
+
+form {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.insideForm {
+  width: 500px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputDiv input{
+  width: 400px;
+}
+
+.checkBoxes {
+  background-color: pink;
+  height:100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkBoxes div {
+  width: 200px;
+}
+
+/*---------Footer------------*/
+footer {
+  height: 40px;
+  background-color: #196cfc;
+}
+/*---------/Footer------------*/

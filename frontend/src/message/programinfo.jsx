@@ -19,7 +19,7 @@ const ProgramInfo = React.createClass({
 		// })
 		// .done((info)=>this.setState({prgramInfo:info}))
 		this.setState({
-			programInfo: singleProgram.programs[0]
+			programInfo: singleProgram.programs[10]
 		})
 	},
 	showDiv(){

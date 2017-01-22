@@ -27,6 +27,7 @@ nav {
   width: auto;
   height: auto;
   border: 1px solid black;
+  background-color: pink;
 }
 
 .messagepage textarea{

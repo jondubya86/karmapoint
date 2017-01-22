@@ -25,8 +25,9 @@ const App = React.createClass({
 ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
+		<IndexRoute component={Geomap}/>
 			{/* <IndexRoute /> */}
-			<Route path="/result" component={ResultPage} />
+			{/*<Route path="/result" component={ResultPage} />*/}
 		</Route>
 	</Router>,
   document.getElementById('root')

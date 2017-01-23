@@ -12,7 +12,7 @@ const UserAccountPage = React.createClass({
       <div>
         <Navbar />
         <div className="userAccountCont">
-          <h1>Upcoming opportunity</h1>
+          <h1>Upcoming opportunities</h1>
           <UpcomingOpps />
           <h1>Pending requests</h1>
           <PendingDiv />

@@ -4,7 +4,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Comment = sequelize.define('Comment', {
     comments: DataTypes.STRING,
-    date: DataTypes.DATEONLY,
+    date: DataTypes.DATE,
     task: DataTypes.STRING,
     hours: DataTypes.INTEGER
 
@@ -12,6 +12,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         Comment.belongsTo(models.Company)
+        Comment.belongsTo(models.User)
       }
     }
   });

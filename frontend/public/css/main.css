@@ -1,0 +1,317 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*-------Navbar--------*/
+nav {
+  height: 50px;
+  background-color: #196cfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /*margin: 0;*/
+  width: 250px;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  font-size: 1.3em;
+}
+
+.karmaPoint {
+  display: flex;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.karmaPoint i {
+  color: gold;
+}
+
+.karmaPoint p {
+  color: gold;
+  margin-left: 4px;
+}
+
+.brand {
+  color: white;
+  font-size: 1.7em;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*-------/Navbar--------*/
+
+/*---------Main Page-----------*/
+.mainPage {
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  background-color: #196cfc;
+  color: white;
+}
+
+.welcome h1{
+  margin: 0;
+}
+
+.welcome span {
+  color: orange;
+}
+
+.messagepage {
+  display: none;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+}
+
+.messagepage textarea{
+  height: 75px;
+  width: 300px;
+}
+
+/*video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}*/
+
+.landingArea {
+  display: flex;
+  /*flex-direction: column;*/
+  height: 100vh;
+  background-color: #196cfc;
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center;*/
+}
+
+.landingArea h1 {
+  font-size: 5em;
+  color: white;
+}
+
+.landingArea h1 span {
+  font-weight: 300;
+  margin-left: 50px;
+}
+
+.landingArea p {
+  font-size: 2em;
+  color: white;
+  margin-left: 50px;
+}
+
+.landingForm {
+  display: flex;
+  align-items: center;
+}
+
+.userForm {
+  display: flex;
+  justify-content: center;
+  background-color: #196cfc;
+}
+
+.userForm p {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+form {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.insideForm {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(137, 137, 137, .8);
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.inputDiv .inputDivH1 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+}
+
+.inputDiv input{
+  width: 400px;
+  height: 30px;
+  font-size: 1em;
+  padding-left: 15px;
+  border: 1px solid #efefef;
+}
+
+.insideForm .interests {
+  margin-left: 0;
+}
+
+.checkBoxes {
+  height:100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.checkBoxes div {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.insideForm .formButton {
+  margin-top: 40px;
+  background-color: orange;
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: 300;
+  /*border: 1px solid #efefef;*/
+  border: none;
+  color: white;
+  border-radius: 3px;
+  transition-duration: .3s;
+  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+  cursor: pointer;
+}
+
+.insideForm .formButton:focus {
+  outline: none;
+}
+
+/*.insideForm .formButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);
+}*/
+
+/*---------User Account--------*/
+.userAccountCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pendingCont {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.completeCont {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.upcomingCont {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.individualPending {
+  height: 150px;
+  background-color: #efefef;
+}
+
+.individualComplete {
+  height: 150px;
+  background-color: #efefef;
+}
+
+.individualOpps {
+  height: 175px;
+  background-color: #efefef;
+  /*margin-bottom: 20px;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+}
+
+.individualOpps button {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.servTitle {
+  width: 200px;
+}
+
+.oppPara {
+  width: 400px;
+}
+
+.services {
+  width: 150px;
+}
+
+/*---------/User Account------*/
+
+
+
+/*---------Footer------------*/
+footer {
+  height: 40px;
+  background-color: #196cfc;
+  display: flex;
+  align-items: center;
+}
+
+small {
+  color: #CFD7DF;
+  margin-left: 40px;
+}
+
+footer a {
+  color: orange;
+  text-decoration: none;
+}
+/*---------/Footer------------*/

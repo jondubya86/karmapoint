@@ -1,18 +1,17 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-
+// components
+// import UserForm from './userform';
+import LandingArea from './LandingArea';
 
 const Mainpage = React.createClass({
   render(){
-    return(
-      
-        <div style = {{display: "flex",justifyContent: "center"}}>
 
-          <div style = {{width:800, height: 400, backgroundColor: "red", borderColor: "red",borderWidth: 2 }}>
-            VIDEO HERE
-          </div>
+    return (
+        <div>
+          <div className="welcome"><h1>welcome back,<span> Carlos</span></h1></div>
+          <LandingArea />
         </div>
-
     )
   }
 })

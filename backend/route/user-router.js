@@ -22,11 +22,12 @@ const postNewUser = (req,res)=>{
 };
 
 const getSingleUser = (req,res) => {
-  User.findById(req.params.id,
-    {include: [Comment]}
-  ).then((review)=>{
-    res.send(review)
-  })
+
+	User.findById(req.params.id,
+		{include: [Comment]}
+	).then((review)=>{
+		res.send(review)
+	})
 };
 
 router.route('/')

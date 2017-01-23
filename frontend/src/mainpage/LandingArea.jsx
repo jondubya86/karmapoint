@@ -13,7 +13,12 @@ const LandingArea = React.createClass({
         </video> */}
         <div>
           <h1><span>Karma</span>Point</h1>
-          <p>Build a future.</p>
+          <p>Keep your past, Build your future.</p>
+          <div className="H3Div">
+            <h3 className="landingH3">Find oppurtunities to volunteer</h3>
+            <h3 className="landingH3">Keep a record and earn points as you go</h3>
+            <h3 className="landingH3">Share your public profile with potential oppurtunities</h3>
+          </div>
         </div>
         <div className="landingForm">
           <UserForm />

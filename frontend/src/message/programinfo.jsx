@@ -52,7 +52,9 @@ const ProgramInfo = React.createClass({
 							<p><strong>Services this program provides:</strong></p>
 							{info.service_tags.join(', ')}
 							<br/><br/>
+							<div className='programVolunteerBtnDiv'>
 							<input type='submit' className='programVolunteerBtn' onClick={this.showDiv} value='Apply to volunteer'/>
+							</div>
 						</div>
 						<br/>
 
@@ -61,7 +63,9 @@ const ProgramInfo = React.createClass({
 							<br/>
 							<textarea placeholder='Let them know why you want to volunteer for this program' />
 							<br/>
+							<div className='messageSendBtnDiv'>
 							<input type='submit' className='messageSendBtn' onClick={this.alert} value='Send'/>
+							</div>
 						</div>
 					</div>
 					</div>

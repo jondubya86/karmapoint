@@ -19,7 +19,7 @@ const ProgramInfo = React.createClass({
 		// })
 		// .done((info)=>this.setState({prgramInfo:info}))
 		this.setState({
-			programInfo: singleProgram.programs[10]
+			programInfo: singleProgram.programs[18]
 		})
 	},
 	showDiv(){
@@ -46,11 +46,11 @@ const ProgramInfo = React.createClass({
 						<button onClick={this.showDiv}>Apply to volunteer</button>
 						<br/><br/>
 						<div className='messagepage'>
-						<p>Send a message to the program:</p>
-						<br/>
-						<textarea placeholder='Let them know why you want to volunteer for this program' />
-						<br/>
-						<button onClick={this.alert}>Send</button>
+							<p>Send a message to the program:</p>
+							<br/>
+							<textarea placeholder='Let them know why you want to volunteer for this program' />
+							<br/>
+							<button onClick={this.alert}>Send</button>
 						</div>
 
 					</div>

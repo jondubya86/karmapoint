@@ -16,7 +16,6 @@ const MapContainer = React.createClass ({
       })
     })
     this.setState({data:arr})
-    console.log(this.state.data)
   },
   render() {
     const location = {

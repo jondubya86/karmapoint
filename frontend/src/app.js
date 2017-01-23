@@ -27,7 +27,6 @@ const App = React.createClass({
 });
 
 ReactDOM.render(
-
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>

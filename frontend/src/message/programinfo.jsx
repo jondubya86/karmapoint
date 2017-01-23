@@ -3,6 +3,7 @@ import {Link} from 'react-router'
 var APIkey = require('../../../APIkey');
 var singleProgram = require('../../../backend/seed/exAPI.js');
 import $ from 'jquery';
+import Navbar from '../components/Navbar';
 
 const ProgramInfo = React.createClass({
 	getInitialState(){
@@ -12,15 +13,18 @@ const ProgramInfo = React.createClass({
 	},
 	componentDidMount(){
 		//can do search with program_numeric_id as params
-		// let zipcode = 10001;
-		// let program_id = this.params.programId;
-		// $.ajax({
-		// url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+program_id+'?api_key='+APIkey
-		// })
-		// .done((info)=>this.setState({prgramInfo:info}))
-		this.setState({
-			programInfo: singleProgram.programs[18]
+		let zipcode = 10001;
+		let programId = this.props.params.programId;
+		$.ajax({
+		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+programId+'?api_key='+APIkey.APIkey,
+		type: 'GET'
 		})
+		.done((info)=>{
+			this.setState({programInfo:info})
+		})
+		// this.setState({
+		// 	programInfo: singleProgram.programs[19]
+		// })
 	},
 	showDiv(){
 			$('.messagepage').css({
@@ -32,14 +36,16 @@ const ProgramInfo = React.createClass({
 		alert('Message Sent!')
 	},
 	render(){
-		console.log(this.state.programInfo)
+		console.log('render',this.state.programInfo)
 			if(this.state.programInfo){
 				let info = this.state.programInfo;
 				return(
 					<div>
 						<h2>{info.name}</h2>
 						<h3>by {info.provider_name}</h3>
+						<div className='programdescription'>
 						<p>{info.description}</p>
+						</div>
 						<p><strong>Services this program provides:</strong></p>
 						{info.service_tags.join(', ')}
 						<br/><br/>

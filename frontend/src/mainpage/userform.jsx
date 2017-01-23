@@ -72,6 +72,7 @@ const Userform = React.createClass({
                 </div>
                <Link to = '/result' ><input className="formButton" type="submit"/></Link>
               </div>
+
             </form>
           </div>
         </div>

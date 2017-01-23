@@ -5,7 +5,7 @@ import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
 
 // Components
 import Mainpage from './mainpage/mainpage';
-import MainResult from './results/resultItem';
+import MainResult from './results/mainResult';
 import ProgramInfo from './message/programinfo';
 import UserAccountPage from './components/userAccount/UserAccountPage';
 import Footer from './components/Footer';
@@ -18,15 +18,16 @@ import '../public/css/programinfo.css'
 const App = React.createClass({
 	render(){
 		return(
-      <div className="mainPage">
-			{this.props.children}
-			<Footer />
-      </div>
+	      <div className="mainPage">
+				{this.props.children}
+				<Footer />
+				</div>
 		)
 	}
 });
 
 ReactDOM.render(
+
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>

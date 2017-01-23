@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualPending = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="individualPending">
         This is the Individual Pending component
       </div>
     )

@@ -6,32 +6,70 @@ body, html {
 
 /*-------Navbar--------*/
 nav {
-  height: 40px;
-  background-color: yellow;
+  height: 50px;
+  background-color: #196cfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/*nav ul {
+nav ul {
   display: flex;
-}*/
+  align-items: center;
+  /*margin: 0;*/
+  width: 250px;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  font-size: 1.3em;
+}
+
+.karmaPoint {
+  display: flex;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.karmaPoint i {
+  color: gold;
+}
+
+.karmaPoint p {
+  color: gold;
+  margin-left: 4px;
+}
+
+.brand {
+  color: white;
+  font-size: 1.7em;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*-------/Navbar--------*/
 
+/*---------Main Page-----------*/
 .mainPage {
   /*height: 100vh;*/
   display: flex;
   flex-direction: column;
 }
 
-.messagepage{
-  display: none;
-  padding-left: 50px;
-  width: auto;
-  height: auto;
-  border: 1px solid black;
+.welcome {
+  background-color: #196cfc;
+  color: white;
 }
 
-.messagepage textarea{
-  height: 75px;
-  width: 300px;
+.welcome h1{
+  margin: 0;
+}
+
+.welcome span {
+  color: orange;
 }
 
 /*video {
@@ -173,10 +211,73 @@ form {
 .userAccountCont {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-pendingCont {
-  background-color: blue;
+.pendingCont {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.completeCont {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.upcomingCont {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.individualPending {
+  height: 150px;
+  background-color: #efefef;
+}
+
+.individualComplete {
+  height: 150px;
+  background-color: #efefef;
+}
+
+.individualOpps {
+  height: 175px;
+  background-color: #efefef;
+  /*margin-bottom: 20px;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+}
+
+.individualOpps button {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.servTitle {
+  width: 200px;
+}
+
+.oppPara {
+  width: 400px;
+}
+
+.services {
+  width: 150px;
 }
 
 /*---------/User Account------*/
@@ -194,5 +295,10 @@ footer {
 small {
   color: #CFD7DF;
   margin-left: 40px;
+}
+
+footer a {
+  color: orange;
+  text-decoration: none;
 }
 /*---------/Footer------------*/

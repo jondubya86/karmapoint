@@ -1,0 +1,15 @@
+.programdescription{
+	margin-right: 400px;
+}
+
+.messagepage{
+  display: none;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+}
+
+.messagepage textarea{
+  height: 75px;
+  width: 300px;
+}

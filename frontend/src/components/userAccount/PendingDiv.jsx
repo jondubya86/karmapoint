@@ -8,6 +8,8 @@ const PendingDiv = React.createClass({
     return (
       <div className="pendingCont">
         <IndividualPending />
+        <IndividualPending />
+        <IndividualPending />
       </div>
     )
   }

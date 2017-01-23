@@ -18,15 +18,16 @@ import '../public/css/programinfo.css'
 const App = React.createClass({
 	render(){
 		return(
-      <div className="mainPage">
-			{this.props.children}
-			<Footer />
-      </div>
+	      <div className="mainPage">
+				{this.props.children}
+				<Footer />
+				</div>
 		)
 	}
 });
 
 ReactDOM.render(
+
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Mainpage}/>

@@ -28,9 +28,9 @@ const ResultItem = React.createClass({
   render(){
     return(
         <div>
-          <div style ={{display: "flex", flexWrap: "wrap"}}>
+          <div style ={{display: "flex", flexWrap: "wrap", marginBottom: 130}}>
             {this.state.programs ? this.state.programs.map(function(a,b){
-              return <h5 style = {{display:"flex", justifyContent: 'center', width:250,height: 50, backgroundColor: "#196cfc", borderRadius: 5, marginLeft:  10, marginRight: 10, color: 'white'}} key = {b}> <Link style = {{color: 'white'}} to={ '/program/' + a.program_numeric_id}> {a.name}</Link> </h5>
+              return <h5 style = {{display:"flex", justifyContent: 'center', alignItems: 'center', width:250,height: 50, backgroundColor: "#196cfc", borderRadius: 5, marginLeft:  10, marginRight: 10, color: 'white'}} key = {b}> <Link style = {{color: 'white', textDecoration: 'none'}} to={ '/program/' + a.program_numeric_id}> {a.name}</Link> </h5>
 
             }): <h5> Loading </h5>
             }

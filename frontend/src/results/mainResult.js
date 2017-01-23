@@ -8,10 +8,12 @@ import Navbar from '../components/Navbar';
 const Mainresult = React.createClass({
   render(){
     return(
-        <div style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>
+        <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>
           <Navbar />
-        	<MapContainer />
-        	<br />
+          <div className="gMaps">
+        	   <MapContainer />
+          </div>
+        	{/* <br /> */}
         	<ResultItem />
         	</div>
     )

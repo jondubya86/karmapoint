@@ -12,7 +12,7 @@ const CompleteVolunteersDiv = React.createClass({
               <h3>The Cecil</h3>
               <p>by Housing Services Inc</p>
             </div>
-            <p className="oppPara">Carlos is an exceptional worker, who strives to be the very best that no one ever was.</p>
+            <p className="oppPara">Kathy is an exceptional worker, who strives to be the very best that no one ever was.</p>
             <div className="services">
               <strong><p>Services this program provides:</p></strong>
               <p>long-term housing, medical care, navigating the system, one-on-one support</p>
@@ -27,7 +27,7 @@ const CompleteVolunteersDiv = React.createClass({
               <h3>Basic Needs Program</h3>
               <p>by AIDS Service Center NYC</p>
             </div>
-            <p className="oppPara">Carlos is exceptionally helpful and dedicated to our cause</p>
+            <p className="oppPara">Kathy is exceptionally helpful and dedicated to our cause</p>
             <div className="services">
               <strong><p>Services this program provides:</p></strong>
               <p>food pantry, free meals, clothing</p>
@@ -42,7 +42,7 @@ const CompleteVolunteersDiv = React.createClass({
               <h3>Food Program</h3>
               <p>by Salvation Army New York Temple</p>
             </div>
-            <p className="oppPara">Carlos is a hard worker and is dedicated to our cause.</p>
+            <p className="oppPara">Kathy is a hard worker and is dedicated to our cause.</p>
             <div className="services">
               <strong><p>Services this program provides:</p></strong>
               <p>food pantry, free meals</p>

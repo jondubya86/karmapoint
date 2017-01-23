@@ -3,6 +3,7 @@ import {Link} from 'react-router'
 var APIkey = require('../../../APIkey');
 var singleProgram = require('../../../backend/seed/exAPI.js');
 import $ from 'jquery';
+import Navbar from '../components/Navbar';
 
 const ProgramInfo = React.createClass({
 	getInitialState(){
@@ -51,11 +52,11 @@ const ProgramInfo = React.createClass({
 						<button onClick={this.showDiv}>Apply to volunteer</button>
 						<br/><br/>
 						<div className='messagepage'>
-						<p>Send a message to the program:</p>
-						<br/>
-						<textarea placeholder='Let them know why you want to volunteer for this program' />
-						<br/>
-						<button onClick={this.alert}>Send</button>
+							<p>Send a message to the program:</p>
+							<br/>
+							<textarea placeholder='Let them know why you want to volunteer for this program' />
+							<br/>
+							<button onClick={this.alert}>Send</button>
 						</div>
 
 					</div>

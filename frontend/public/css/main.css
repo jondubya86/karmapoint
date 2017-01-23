@@ -110,17 +110,28 @@ nav ul li {
 
 .landingArea {
   display: flex;
-  /*flex-direction: column;*/
-  height: 100vh;
-  background-color: #196cfc;
+  height: 92vh;
+  /*background-color: #196cfc;*/
   display: flex;
   justify-content: space-around;
-  /*align-items: center;*/
+  background-color: #196cfc;
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
 .landingArea h1 {
   font-size: 5em;
   color: white;
+}
+
+.H3Div {
+  margin-top: 200px;
+}
+
+.landingH3 {
+  color: gold;
+  margin-left: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
 }
 
 .landingArea h1 span {
@@ -152,7 +163,7 @@ nav ul li {
 }
 
 form {
-  width: 600px;
+  width: 550px;
   display: flex;
   justify-content: center;
 }
@@ -162,7 +173,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(137, 137, 137, .8);
+  background-color: rgba(137, 137, 137, .5);
   padding-bottom: 25px;
   border-radius: 5px;
 }
@@ -172,7 +183,7 @@ form {
   flex-direction: column;
   align-items: center;
   height: 200px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .inputDiv .inputDivH1 {
@@ -354,6 +365,18 @@ img {
 
 /*--------------*/
 
+
+.mainResultDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.gMaps {
+  display: flex;
+  justify-content: center;
+  background-color: #196cfc;
+  padding-bottom: 30px;
+}
 
 
 /*---------Footer------------*/

@@ -5,7 +5,7 @@ import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
 
 // Components
 import Mainpage from './mainpage/mainpage';
-import MainResult from './results/resultItem';
+import MainResult from './results/mainResult';
 import ProgramInfo from './message/programinfo';
 import Userform from './mainpage/userform';
 import UserAccountPage from './components/userAccount/UserAccountPage';

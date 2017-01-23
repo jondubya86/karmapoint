@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Map from './map';
-import APIcall from '../../../../backend/seed/exAPI.js'
+import {APIcall,filterOutLocation} from '../../../../backend/seed/exAPI.js'
 
 // css
 // import '../public/css/main.css';
@@ -10,8 +10,15 @@ const MapContainer = React.createClass ({
     return ({data:APIcall})
   },
   componentDidMount(){
-    this.state.data.programs.map((a)=>this.setState({data:a.offices}))
-    console.log(this.state.data.programs.map((a)=>{a.offices}))
+    const arr=[]
+    APIcall.programs.map((a)=>{return a.offices.map((b)=>{
+    return arr.push(b.location)
+  })
+})
+    // let markerz = APIcall.programs.map((a)=>{return a.offices.map((b)=>{return b})})
+    // this.state.data.programs.map((a)=>this.setState({data:a.offices}))
+    // console.log(this.state.data.programs.map((a)=>{a.offices}))
+    // console.log('filter',filterOutLocation)
   },
   render() {
     const location = {

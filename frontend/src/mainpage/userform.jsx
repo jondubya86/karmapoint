@@ -99,9 +99,9 @@ const Userform = React.createClass({
                     <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
                   </div>
                 </div>
-               <Link to = '/result' ><input placeholder = ""type = "submit" /> </Link>
+               <Link to = '/result'>
+               <input placeholder = ""type = "submit" /> </Link>
                 <input className="formButton" type="submit" />
-              </div>
             </form>
 
             

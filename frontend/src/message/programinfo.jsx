@@ -15,9 +15,9 @@ const ProgramInfo = React.createClass({
 		let zipcode = 10001
 		let program_id = this.params.programId
 		$.ajax({
-		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+program_id+'?api_key='+APIkey+
+		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+program_id+'?api_key='+APIkey
 		})
-		.done((info)=>this.setState({prgramInfo:info}))
+		.done((info)=>this.setState({programInfo:info}))
 		// this.setState({
 		// 	programInfo: singleProgram.programs[0]
 		// })

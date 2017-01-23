@@ -3,6 +3,7 @@ import {Link} from 'react-router'
 var APIkey = require('../../../APIkey');
 var singleProgram = require('../../../backend/seed/exAPI.js');
 import $ from 'jquery';
+import Navbar from '../components/Navbar';
 
 const ProgramInfo = React.createClass({
 	getInitialState(){
@@ -42,6 +43,8 @@ const ProgramInfo = React.createClass({
 			if(this.state.programInfo){
 				let info = this.state.programInfo;
 				return(
+					<div>
+					<Navbar />
 					<div className="programInfoDiv">
 						<div className='programInnerDiv'>
 							<h2>{info.name}</h2>
@@ -63,7 +66,7 @@ const ProgramInfo = React.createClass({
 							<br/>
 							<button onClick={this.alert}>Send</button>
 						</div>
-
+					</div>
 					</div>
 				)
 			}else{

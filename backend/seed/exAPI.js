@@ -1,3 +1,7 @@
+const filterOutLocation=()=>{
+  APIcall.filter((a)=>{return a.programs.offices.location})
+}
+
 let APIcall = {
  "count": "157",
  "postal_location": {
@@ -2623,4 +2627,4 @@ let APIcall = {
  "etag": "\"bLMx0u7LoU_Cwr0jjkkTdfz1Aus/UD-lfHes1ItNGu8XcbXGVZG6JKI\""
 }
 
-module.exports = APIcall;
+module.exports = {APIcall,filterOutLocation};

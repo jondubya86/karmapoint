@@ -1,17 +1,22 @@
 import React, {Component} from 'react'
 import Map from './map';
-import APIcall from '../../../../backend/seed/exAPI.js'
+import {APIcall} from '../../../../backend/seed/exAPI.js'
 
 // css
 // import '../public/css/main.css';
 
 const MapContainer = React.createClass ({
   getInitialState(){
-    return ({data:APIcall})
+    return ({data:null})
   },
   componentDidMount(){
-    this.state.data.programs.map((a)=>this.setState({data:a.offices}))
-    console.log(this.state.data.programs.map((a)=>{a.offices}))
+    const arr=[]
+    APIcall.programs.map((a)=>{return a.offices.map((b)=>{
+      return arr.push(b.location)
+      })
+    })
+    this.setState({data:arr})
+    console.log(this.state.data)
   },
   render() {
     const location = {
@@ -25,7 +30,7 @@ const MapContainer = React.createClass ({
       }
     ]
   return(
-    <div style={{width: 600, height: 600, background:'red'}}>
+    <div style={{width: 800, height: 400, background:'red'}}>
       <Map center={ location } markers={markers}/>
     </div>
     )

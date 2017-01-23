@@ -20,6 +20,9 @@ nav ul {
   width: 250px;
   justify-content: space-between;
 }
+nav a {
+  text-decoration: none;
+}
 
 nav ul li {
   list-style: none;
@@ -29,7 +32,7 @@ nav ul li {
 
 .karmaPoint {
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.7em;
   align-items: center;
 }
 
@@ -62,6 +65,8 @@ nav ul li {
 .welcome {
   background-color: #196cfc;
   color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
 .welcome h1{
@@ -69,7 +74,27 @@ nav ul li {
 }
 
 .welcome span {
-  color: orange;
+  color: gold;
+}
+
+.welcome a {
+  text-decoration: none;
+}
+
+.landingWelcome {
+  display: flex;
+}
+
+.landingWelcome p {
+  margin: 0;
+}
+
+.landingBrand {
+  width:100px;
+}
+
+.landingWelcome .landingH1 {
+  margin-right: 15px;
 }
 
 /*video {
@@ -184,7 +209,7 @@ form {
 
 .insideForm .formButton {
   margin-top: 40px;
-  background-color: orange;
+  background-color: gold;
   width: 200px;
   height: 50px;
   font-size: 1.5em;
@@ -216,7 +241,7 @@ form {
 
 .pendingCont {
   width: 900px;
-  height: 500px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -237,6 +262,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .individualPending {
@@ -264,8 +290,9 @@ form {
   width: 100px;
   height: 50px;
   color: white;
-  background-color: orange;
+  background-color: gold;
   border: none;
+  font-size: 1em;
 }
 
 .servTitle {
@@ -280,7 +307,52 @@ form {
   width: 150px;
 }
 
+.earnedStars {
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+.earnedStars i {
+  color: gold;
+}
+.earnedStars p {
+  color: gold;
+  margin-left: 3px;
+}
+
 /*---------/User Account------*/
+
+/*--------------*/
+.userCompleted {
+  display: flex;
+  justify-content: center;
+}
+
+.bioProfile{
+  height: 400px;
+  background-color: #196cfc;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio {
+  width: 500px;
+  font-size: 1.5em;
+}
+
+.bio p {
+  color: white;
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+/*--------------*/
 
 
 
@@ -298,7 +370,7 @@ small {
 }
 
 footer a {
-  color: orange;
+  color: gold;
   text-decoration: none;
 }
 /*---------/Footer------------*/

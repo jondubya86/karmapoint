@@ -6,11 +6,11 @@ import LandingArea from './LandingArea';
 
 const Mainpage = React.createClass({
   render(){
+
     return (
         <div>
           <div className="welcome"><h1>welcome back,<span> Carlos</span></h1></div>
           <LandingArea />
-          {/* <UserForm /> */}
         </div>
     )
   }

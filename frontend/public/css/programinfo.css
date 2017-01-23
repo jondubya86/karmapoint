@@ -1,26 +1,73 @@
+.programDiv{
+	background-color: white;
+}
+
 .programInfoDiv{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-bottom: 220px;
+	margin-bottom: 210px;
 }
 
 .programInnerDiv{
 	width: 800px;
+	background-color: rgb(240,240,240);
+	padding: 0 30px 0 30px;
 }
 
-.programdescription{
-	/*margin-right: 400px;*/
+.programVolunteerBtnDiv{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.programVolunteerBtn{
+	align-self: center;
+  background-color: gold;
+  width: 300px;
+  height: 25px;
+  font-size: 1.2em;
+  font-weight: 300;
+  border: 1px solid #efefef;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  transition-duration: .3s;
+  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+  cursor: pointer;
 }
 
 .messagepage{
   display: none;
-  padding-left: 50px;
+  align-items: center;
   width: auto;
   height: auto;
+  background-color: rgb(240,240,240);
+  padding: 0 30px 0 30px;
 }
 
 .messagepage textarea{
   height: 75px;
   width: 300px;
+}
+
+.messageSendBtnDiv{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.messageSendBtn {
+  background-color: gold;
+  width: 150px;
+  height: 25px;
+  font-size: 1.2em;
+  font-weight: 300;
+  border: 1px solid #efefef;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  transition-duration: .3s;
+  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+  cursor: pointer;
 }

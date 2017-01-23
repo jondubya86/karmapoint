@@ -22,9 +22,6 @@ const ProgramInfo = React.createClass({
 		.done((info)=>{
 			this.setState({programInfo:info})
 		})
-		// this.setState({
-		// 	programInfo: singleProgram.programs[19]
-		// })
 	},
 	showDiv(){
 			$('.messagepage').css({
@@ -32,7 +29,7 @@ const ProgramInfo = React.createClass({
 				'transition':'3s',
 			})
 			$('.programInfoDiv').css({
-				'margin-bottom': '45px'
+				'margin-bottom': '25px'
 			})
 	},
 	alert(){
@@ -43,7 +40,7 @@ const ProgramInfo = React.createClass({
 			if(this.state.programInfo){
 				let info = this.state.programInfo;
 				return(
-					<div>
+					<div className='programDiv'>
 					<Navbar />
 					<div className="programInfoDiv">
 						<div className='programInnerDiv'>
@@ -55,16 +52,20 @@ const ProgramInfo = React.createClass({
 							<p><strong>Services this program provides:</strong></p>
 							{info.service_tags.join(', ')}
 							<br/><br/>
-							<button onClick={this.showDiv}>Apply to volunteer</button>
+							<div className='programVolunteerBtnDiv'>
+							<input type='submit' className='programVolunteerBtn' onClick={this.showDiv} value='Apply to volunteer'/>
+							</div>
 						</div>
-						<br/><br/>
+						<br/>
 
 						<div className='messagepage'>
-							<p>Send a message to the program:</p>
+							<h3>Send a message to the program:</h3>
 							<br/>
 							<textarea placeholder='Let them know why you want to volunteer for this program' />
 							<br/>
-							<button onClick={this.alert}>Send</button>
+							<div className='messageSendBtnDiv'>
+							<input type='submit' className='messageSendBtn' onClick={this.alert} value='Send'/>
+							</div>
 						</div>
 					</div>
 					</div>

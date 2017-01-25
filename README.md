@@ -7,6 +7,8 @@ It will allow users to register and sign up to allow for there to be a tracking 
 
 Upon sign-up it will log your future accumulated points/stars that potential employers/college boards can see. Companies that sign up must be verified before being licensed a company/organizer account.
 
+There may be points, but the point is karma. 
+
 ## Database Setup
 Install postgres app AND postico app then run both, then create a database called "karmapoint" within postico.
 
@@ -46,6 +48,7 @@ Change the fields for development, test, and production
 
 ## Start
 First: `npm install`
+
 To start: `npm start`
 
 ## Seeding
